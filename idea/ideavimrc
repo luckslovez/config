@@ -1,0 +1,85 @@
+""" Source this file in the actual .ideavimrc
+" echo 'source ~/.config/idea/ideavimrc' \
+" > ~/.ideavimrc
+
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+set incsearch
+set number
+set relativenumber
+set visualbell
+set gdefault                      " substitute all occurrences in line per default
+set history=10000                 " keep x lines of command line history
+set scrolloff=5 sidescrolloff=10  " keep some lines before and after the cursor visible
+set clipboard=unnamedplus,unnamed,ideaput " integrate with system clipboard
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" Mappings --------------------------------
+map <leader>f <Plug>(easymotion-s)
+map <leader>e <Plug>(easymotion-f)
+
+map <leader>d <Action>(Debug)
+map <leader>r <Action>(RenameElement)
+map <leader>c <Action>(Stop)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+map <S-Space> <Action>(GotoNextError)
+
+map <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>o <Action>(FileStructurePopup)
+
+" nmap <leader>f :action GotoFile<CR> I use native Ctrl+Shft+o
+nmap <leader>o :action GotoClass<CR>
+nmap <leader>S :action GotoSymbol<CR>
+nmap <leader>/ :action FindInPath<CR>
+nmap <leader>n :tabnext<CR>
+nmap <leader>p :tabprev<CR>
+nmap <leader>fs :action FileStructurePopup<CR>
+nmap <leader>fh :action CallHierarchy<CR>
+nmap gi :action GotoImplementation<CR>
+nmap gu :action ShowUsages<CR>
+nmap gt :action Go
+nmap U :redo<CR>
+nmap <C-l> :tabnext<CR>
+imap <C-l> :tabnext<CR>
+nmap <C-h> :tabprev<CR>
+imap <C-h> :tabprev<CR>
+"nmap <leader>s :action ActivateTerminalToolWindow<CR>
+nmap <leader>w :action HideAllWindows<CR>
+nmap <leader>z :action ToggleDistractionFreeMode<CR>
+nmap <leader>d :action ActivateProjectToolWindow<CR>
+nmap <leader>rc :action ContextRun<CR>
+nmap <leader>rg :action RunContextGroup<CR>
+nmap <leader>rw :action ActivateRunToolWindow<CR>
+nmap <leader>rf :action RerunFailedTests<CR>
+nmap <leader>rn :action RenameElement<CR>
+nnoremap <leader>gn :action GotoNextError<CR>
+nnoremap <leader>gp :action GotoPreviousError<CR>
+nnoremap <leader>= :action ReformatCode<CR>
+nnoremap [[ :action MethodUp<CR>
+nnoremap ]] :action MethodDown<CR>

@@ -1,0 +1,39 @@
+[user]
+	name = Lucas
+	email = luckslovez@gmail.com
+	signingkey = A374CADF82BFD5FE
+[gpg]
+	program = /usr/local/bin/gpg
+[pull]
+	rebase = false
+[commit]
+	gpgsign = true
+[alias]
+	st = status -sb
+	ll = log --graph --pretty='format:%x09%C(yellow)%h %Cred%G? %Creset%ad %C(green)%ae%x09%Creset%s' --date='format:%d/%m/%y %k:%M'
+	last = log -1 HEAD --stat
+	ci = commit
+	cia = commit --amend
+	co = checkout
+	cob = checkout -b
+  br = branch --format='%(HEAD) %(align:width=50)%(color:yellow)%(refname:short)%(end)%(color:reset) - %(align:width=75)%(contents:subject)%(end) %(align:width=17)%(color:green)%(committerdate:relative)%(end) %(color:red)%(authoremail)' --sort=-committerdate
+  bd = branch -D
+	rv = remote -v
+	pw = push --force-with-lease
+  r = reset --mixed
+  rh = reset --hard
+  rl = reset HEAD~1 --mixed
+  a = add .
+	gl = config --global --list
+	ge = config --global --edit
+[cola]
+	spellcheck = false
+	theme = default
+	startupmode = list
+[push]
+	autoSetupRemote = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
