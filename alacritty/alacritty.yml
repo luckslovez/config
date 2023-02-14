@@ -1,7 +1,7 @@
 import:
   - ~/.config/alacritty/alacritty-theme/themes/tokyo-night.yaml
 font:
-  size: 14.0
+  size: 10.0
   normal:
     family: JetBrainsMono Nerd Font
     style: Regular
@@ -65,5 +65,6 @@ scrolling:
   # Scrolling distance multiplier.
   multiplier: 3
   
-key_bindings:
-  - { key: Return,          mods: Command,                    action: ToggleSimpleFullscreen }
+    # uncomment for macos x
+    #key_bindings:
+  #  - { key: Return,          mods: Command,                    action: ToggleSimpleFullscreen }
