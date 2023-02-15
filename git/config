@@ -2,8 +2,6 @@
 	name = Lucas
 	email = luckslovez@gmail.com
 	signingkey = A374CADF82BFD5FE
-[gpg]
-	program = /usr/local/bin/gpg
 [pull]
 	rebase = false
 [commit]
