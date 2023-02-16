@@ -4,8 +4,6 @@
 	signingkey = A374CADF82BFD5FE
 [core]
 	editor = nvim
-[gpg]
-	program = /usr/local/bin/gpg
 [pull]
 	rebase = false
 [commit]
