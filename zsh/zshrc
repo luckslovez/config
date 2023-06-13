@@ -22,7 +22,7 @@ export LANG=en_US.UTF-8
 
 # git
 alias g="git"
-alias gui="gitui"
+alias gui="~/.cargo/bin/gitui"
 
 # nvim
 alias vim="nvim" 
