@@ -10,3 +10,13 @@ git-cola/
 nvim/
 spaceship/spaceship.zsh.zwc
 yabai/
+.gsd-keyboard.settings-ported
+dconf/
+enchant/
+evolution/
+gedit/
+ibus/
+monitors.xml
+pulse/
+user-dirs.dirs
+user-dirs.locale
