@@ -1,0 +1,12 @@
+nvim/
+.DS_Store
+.idea/
+configstore/
+containers/
+gatsby/
+gh/
+git-cola/
+**/AppSupport
+nvim/
+spaceship/spaceship.zsh.zwc
+yabai/
