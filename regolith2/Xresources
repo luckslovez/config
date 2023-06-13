@@ -1,0 +1,4 @@
+i3-wm.gaps.inner.size: 0
+gnome.terminal.font:	JetBrainsMono Nerd Font 12
+regolith.wallpaper.file: /usr/share/backgrounds/pyrinees.jpg
+regolith.wallpaper.options: zoom
