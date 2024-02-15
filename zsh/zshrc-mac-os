@@ -1,0 +1,5 @@
+# autocompletion for brew installed commands
+FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+# IntelliJ
+export PATH=$PATH:"/Applications/IntelliJ IDEA.app/Contents/MacOS"
