@@ -1,2 +1,5 @@
 # golang
 export PATH=$PATH:/usr/local/go/bin
+# nvim
+export PATH=$PATH:/usr/local/go/bin
+eval "$(atuin init zsh)"
