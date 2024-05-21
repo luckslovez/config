@@ -1,0 +1,3 @@
+!regolith.look.path: /usr/share/regolith-look/default
+regolith.look.path: /usr/share/regolith-look/i3-default
+gnome.terminal.font: JetBrains Mono 14
